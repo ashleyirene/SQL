@@ -1,0 +1,19 @@
+CREATE TABLE bookstore (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, quantity INTEGER, language TEXT, price INTEGER);
+
+INSERT INTO bookstore VALUES
+(1, "L is for Lawless", 'mystery', 50, 'English', 16);
+INSERT INTO bookstore VALUES (2, 'The Forbidden', 'romance', 50, 'English', 15);
+INSERT INTO bookstore VALUES (3, 'The Notebook', 'romance', 72, 'Spanish', 20);
+INSERT INTO bookstore VALUES (4, 'Bossypants', 'Humor', 75, 'English', 25);
+INSERT INTO bookstore VALUES (5, 'And then there were none', 'mystery', 100, 'French', 15);
+INSERT INTO bookstore VALUES (6, 'SQL for dummies', 'Self-Help', 25, 'Spanish', 22);
+INSERT INTO bookstore VALUES (7, 'BIBLE', 'Religious', 43, 'English', 1);
+INSERT INTO bookstore VALUES (8, 'First Confessor', 'Horror', 42, 'Spanish', 11);
+INSERT INTO bookstore VALUES (9, 'Chainfire', 'Sci-fi', 33, 'English', 30);
+INSERT INTO bookstore VALUES (10, 'Samurai Game', 'mystery', 56, 'Spanish', 23);
+INSERT INTO bookstore VALUES (11, 'Chasing Manhattan', 'romance', 31, 'English', 32);
+INSERT INTO bookstore VALUES (12, 'The Prized Girl', 'romance', 20, 'Spanish', 18);
+INSERT INTO bookstore VALUES (13, 'Flawless', 'mystery', 60, 'English', 14);
+INSERT INTO bookstore VALUES (14, 'FLORA', 'nonfiction', 20, 'Spanish', 22);
+INSERT INTO bookstore VALUES (15, 'And then there were none', 'mystery', 55, 'English', 16);
+SELECT title, price FROM bookstore ORDER BY price ASC; 
